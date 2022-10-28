@@ -1,0 +1,90 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666078629189' stop='1666078648973'>
+    <name>product</name>
+    <title>product</title>
+    <test-cases>
+        <test-case start='1666078629190' status='passed' stop='1666078634483'>
+            <name>login</name>
+            <title>login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666078634484' status='passed' stop='1666078636756'>
+            <name>click on products</name>
+            <title>click on products</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666078636757' status='failed' stop='1666078648723'>
+            <name>find dupicates</name>
+            <title>find dupicates</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5b785a5c-09fe-4ac1-a5c7-9b14cefab3cc-attachment.png' type='image/png' size='78603'/>
+            </attachments>
+            <failure>
+                <message>Expect $(`//span[text()="Merging Criteria Selection"]`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>Error: Expect $(`//span[text()="Merging Criteria Selection"]`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"
+                    at Context.&lt;anonymous> (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\specs\deleteduplicates.js:39:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666078648724' status='broken' stop='1666078648972'>
+            <name>select and delete</name>
+            <title>select and delete</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b975553d-9dfd-4b7e-9553-a4ec5e8b7cb4-attachment.png' type='image/png' size='78603'/>
+            </attachments>
+            <failure>
+                <message>The selector "input[@type="checkbox" and@ value="13"]" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "input[@type="checkbox" and@ value="13"]" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at getErrorFromResponseBody (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.$ (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at async Browser.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\specs\deleteduplicates.js:56:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

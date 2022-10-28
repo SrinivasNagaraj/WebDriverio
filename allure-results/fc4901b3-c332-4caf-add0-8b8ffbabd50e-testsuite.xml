@@ -1,0 +1,94 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666086979060' stop='1666087003641'>
+    <name>product</name>
+    <title>product</title>
+    <test-cases>
+        <test-case start='1666086980775' status='passed' stop='1666086988844'>
+            <name>login</name>
+            <title>login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666086988853' status='passed' stop='1666086990682'>
+            <name>click on products</name>
+            <title>click on products</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1666086990684' status='failed' stop='1666087003185'>
+            <name>find dupicates</name>
+            <title>find dupicates</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='b51f9e49-5f05-4b6f-892d-9a3bfcd304dd-attachment.mp4' type='video/mp4' size='118'/>
+            </attachments>
+            <failure>
+                <message>Expect $(`//span[text()="Merging Criteria Selection"]`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>Error: Expect $(`//span[text()="Merging Criteria Selection"]`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"
+                    at Context.&lt;anonymous> (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\specs\deleteduplicates.js:39:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1666087003205' status='broken' stop='1666087003636'>
+            <name>select and delete</name>
+            <title>select and delete</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='1e50d42e-cdaf-4671-b1c0-3bccdea1623a-attachment.mp4' type='video/mp4' size='121'/>
+            </attachments>
+            <failure>
+                <message>The selector "input[@type="checkbox" and@ value="13"]" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "input[@type="checkbox" and@ value="13"]" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at getErrorFromResponseBody (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.$ (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at async Browser.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\specs\deleteduplicates.js:56:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

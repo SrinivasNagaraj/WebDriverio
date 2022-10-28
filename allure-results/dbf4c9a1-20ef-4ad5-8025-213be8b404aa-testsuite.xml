@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666174483296' stop='1666174507507'>
+    <name>product</name>
+    <title>product</title>
+    <test-cases>
+        <test-case start='1666174483307' status='broken' stop='1666174507469'>
+            <name>create product</name>
+            <title>create product</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='65914ba6-7829-4119-97a3-d4824a9c97e1-attachment.mp4' type='video/mp4' size='118'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "[name='user_name']" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "[name='user_name']" because element wasn't found
+                    at implicitWait (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at async Element.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async loginPage.login (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\pageobjects\vtiger_login_page.js:15:9)
+                    at async Context.&lt;anonymous> (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\specs\createproduct.js:19:1)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

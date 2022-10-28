@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666182731913' stop='1666182735493'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1666182731927' status='broken' stop='1666182735466'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='argument' name='browserVersion' value='106.0.5249.119'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='616ccca6-afe7-4e6b-94c2-8088bcf0ff26-attachment.mp4' type='video/mp4' size='152'/>
+            </attachments>
+            <failure>
+                <message>unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=106.0.5249.119)</message>
+                <stack-trace>unknown error: unknown error: net::ERR_NAME_NOT_RESOLVED
+                  (Session info: chrome=106.0.5249.119)
+                    at getErrorFromResponseBody (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\webdriver\build\request\index.js:166:60)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Browser.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Browser.wrapCommandFn (C:\Users\srinivas nagaraju\Desktop\webdriverio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Context.&lt;anonymous> (C:\Users\srinivas nagaraju\Desktop\webdriverio\test\specs\example.e2e.js:6:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
